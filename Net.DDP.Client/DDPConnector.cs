@@ -42,7 +42,7 @@ namespace Net.DDP.Client
 
         void _socket_Opened(object sender, EventArgs e)
         {
-            this.Send("{\"msg\":\"connect\"}");
+            this.Send("{\"msg\":\"connect\", \"version\": \"1\", \"support\": [\"1\", \"pre1\"] }");
             _isWait = 0;
         }
 
